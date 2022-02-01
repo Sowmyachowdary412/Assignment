@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Text Assignment 
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form id="myForm" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>
+                        Full Name <input type="text" name="fullName" id="fullName"/>
+                        </label>
+                        <label>
+                            Age <input type="number" name="Age" id="Age"/>
+                        </label>
+                    </div>
+		            <div  class="form-action-buttons">
+                        <input type="submit" value="Save">
+                    </div>
+		            <input type="button" onclick="myFunction()" value="clear">
+                </form>
+            </td>
+            <td>
+                <table class="list" id="ListofUsers">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td colspan="2">
+                                <div>
+                                    <div id="btnDelete" onclick="DeleteRows()" style="margin-left: 50px;">
+                                        <input type="button" value="ClearAll">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>      
+    </table>   
+    <script src="script.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</body>
+</html>
